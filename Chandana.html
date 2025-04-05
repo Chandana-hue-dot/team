@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project CHAnDAna Org Chart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .chart-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .node {
+      border-radius: 10px;
+      padding: 10px 15px;
+      margin: 8px;
+      text-align: center;
+      font-weight: bold;
+      min-width: 150px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .editable {
+      outline: none;
+    }
+    .pink { background-color: #f794c4; }
+    .yellow { background-color: #fcd34d; }
+    .sky { background-color: #bae6fd; }
+    .purple { background-color: #ddd6fe; }
+    .green { background-color: #bbf7d0; }
+    .red { background-color: #fecaca; }
+    .blue { background-color: #c7d2fe; }
+
+    .flex-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+    .section { margin-top: 20px; }
+    .connector {
+      width: 2px;
+      background: #555;
+      margin: 0 auto;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <div class="node pink editable" contenteditable>Project CHAnDAna</div>
+
+    <div class="flex-row section">
+      <div class="node sky editable" contenteditable>Program Monitoring Committee<br><small>Prof. Asokan, Prof. Ashok Raichur, Mr. Prakash, Mr. Srikanth, Mr. Pardeep</small></div>
+      <div class="node sky editable" contenteditable>GoK-IISc-IOCL Steering Committee<br><small>Mentoring, Technical, Purchase</small></div>
+      <div class="node sky editable" contenteditable>Expert Advisory Committee<br><small>Dr. Deepa Bhat, Dr. Tanya Seshadri, Dr. Prabhdeep Kaur, Dr. Nishant, Dr. Yogesh</small></div>
+    </div>
+
+    <div class="connector"></div>
+
+    <div class="node yellow editable" contenteditable>Principal Investigator<br>Dr. Sai Siva Gorthi</div>
+
+    <div class="flex-row section">
+      <div>
+        <div class="node red editable" contenteditable>Project Execution Team</div>
+        <div class="flex-row">
+          <div class="node red editable" contenteditable>IEC Activities Team<br>Nisar</div>
+          <div class="node red editable" contenteditable>Command & Quality Testing Lab<br>Dr. Lokanathan, Anitha, Rayees, Prajwal</div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="node purple editable" contenteditable>Project Management Team</div>
+        <div class="node blue editable" contenteditable>Dr. Kathir (PM), Mr. Nagaraju (Field), Dr. Pradhyumna, Dr. Akhila, Dr. Vishva, Dr. Ramakrishnan, Mr. Vikram</div>
+      </div>
+
+      <div>
+        <div class="node green editable" contenteditable>Project Implementation Team</div>
+        <div class="flex-row">
+          <div class="node green editable" contenteditable>Mysuru<br>Pooja, Ajivyappa, Arjun</div>
+          <div class="node green editable" contenteditable>Chamarajanagar<br>Vinuraj, Yogesh, Santosh, Srinivas</div>
+          <div class="node green editable" contenteditable>Kodagu<br>Dr. Kaveri, Siddaraju, Rajesh</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
