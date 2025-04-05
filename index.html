@@ -1,87 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Project CHAnDAna Org Chart</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project CHAnDAna Structure</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f0f4f8;
-      margin: 0;
-      padding: 20px;
-    }
-    .chart-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .node {
-      border-radius: 10px;
-      padding: 10px 15px;
-      margin: 8px;
+      background-color: #f8faff;
       text-align: center;
-      font-weight: bold;
-      min-width: 150px;
+      padding: 40px;
+    }
+    .box {
+      border-radius: 12px;
+      padding: 12px;
+      margin: 8px auto;
       display: inline-block;
-      cursor: pointer;
+      text-align: left;
+      max-width: 350px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    .editable {
-      outline: none;
+    .title {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 8px;
     }
-    .pink { background-color: #f794c4; }
-    .yellow { background-color: #fcd34d; }
-    .sky { background-color: #bae6fd; }
-    .purple { background-color: #ddd6fe; }
-    .green { background-color: #bbf7d0; }
-    .red { background-color: #fecaca; }
-    .blue { background-color: #c7d2fe; }
-
-    .flex-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
-    .section { margin-top: 20px; }
-    .connector {
-      width: 2px;
-      background: #555;
-      margin: 0 auto;
-      height: 20px;
+    .pink { background-color: #f8c7cc; }
+    .blue { background-color: #b8e0ff; }
+    .yellow { background-color: #fff3b0; }
+    .red { background-color: #ffd1d1; }
+    .purple { background-color: #dad1ff; }
+    .green { background-color: #cbf7d9; }
+    .lightgreen { background-color: #dcffe3; }
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .sub-title {
+      font-weight: bold;
+      margin: 6px 0 3px;
     }
   </style>
 </head>
 <body>
-  <div class="chart-container">
-    <div class="node pink editable" contenteditable>Project CHAnDAna</div>
+  <div class="box pink">
+    <div class="title">Project CHAnDAna</div>
+  </div>
 
-    <div class="flex-row section">
-      <div class="node sky editable" contenteditable>Program Monitoring Committee<br><small>Prof. Asokan, Prof. Ashok Raichur, Mr. Prakash, Mr. Srikanth, Mr. Pardeep</small></div>
-      <div class="node sky editable" contenteditable>GoK-IISc-IOCL Steering Committee<br><small>Mentoring, Technical, Purchase</small></div>
-      <div class="node sky editable" contenteditable>Expert Advisory Committee<br><small>Dr. Deepa Bhat, Dr. Tanya Seshadri, Dr. Prabhdeep Kaur, Dr. Nishant, Dr. Yogesh</small></div>
+  <div class="container">
+    <div class="box blue">
+      <div class="title">Program Monitoring Committee</div>
+      <ul>
+        <li>Prof. Asokan</li>
+        <li>Prof. Ashok Raichur</li>
+        <li>Mr. Prakash</li>
+        <li>Mr. Srikanth</li>
+        <li>Mr. Pardeep</li>
+      </ul>
     </div>
 
-    <div class="connector"></div>
+    <div class="box blue">
+      <div class="title">GoK-IISc-IOCL Steering Committee</div>
+      <ul>
+        <li>Mentoring Committee</li>
+        <li>Technical Committee</li>
+        <li>Purchase Committee</li>
+      </ul>
+    </div>
 
-    <div class="node yellow editable" contenteditable>Principal Investigator<br>Dr. Sai Siva Gorthi</div>
+    <div class="box blue">
+      <div class="title">Expert Advisory Committee</div>
+      <ul>
+        <li>Dr. Deepa Bhat</li>
+        <li>Dr. Tanya Seshadri</li>
+        <li>Dr. Prabhdeep Kaur</li>
+        <li>Dr. Nishant</li>
+        <li>Dr. Yogesh</li>
+      </ul>
+    </div>
+  </div>
 
-    <div class="flex-row section">
-      <div>
-        <div class="node red editable" contenteditable>Project Execution Team</div>
-        <div class="flex-row">
-          <div class="node red editable" contenteditable>IEC Activities Team<br>Nisar</div>
-          <div class="node red editable" contenteditable>Command & Quality Testing Lab<br>Dr. Lokanathan, Anitha, Rayees, Prajwal</div>
-        </div>
-      </div>
-      
-      <div>
-        <div class="node purple editable" contenteditable>Project Management Team</div>
-        <div class="node blue editable" contenteditable>Dr. Kathir (PM), Mr. Nagaraju (Field), Dr. Pradhyumna, Dr. Akhila, Dr. Vishva, Dr. Ramakrishnan, Mr. Vikram</div>
-      </div>
+  <div class="box yellow">
+    <div class="title">Principal Investigator</div>
+    Dr. Sai Siva Gorthi
+  </div>
 
-      <div>
-        <div class="node green editable" contenteditable>Project Implementation Team</div>
-        <div class="flex-row">
-          <div class="node green editable" contenteditable>Mysuru<br>Pooja, Ajivyappa, Arjun</div>
-          <div class="node green editable" contenteditable>Chamarajanagar<br>Vinuraj, Yogesh, Santosh, Srinivas</div>
-          <div class="node green editable" contenteditable>Kodagu<br>Dr. Kaveri, Siddaraju, Rajesh</div>
-        </div>
-      </div>
+  <div class="container">
+    <div class="box red">
+      <div class="title">Project Execution Team</div>
+      <div class="sub-title">IEC Activities Team</div>
+      <ul><li>8) Nisar</li></ul>
+      <div class="sub-title">Command Center & Quality Testing Lab</div>
+      <ul>
+        <li>9) Dr. Lokanathan</li>
+        <li>10) Anitha</li>
+        <li>11) Rayees</li>
+        <li>12) Prajwal</li>
+      </ul>
+    </div>
+
+    <div class="box purple">
+      <div class="title">Project Management Team</div>
+      <ul>
+        <li>1) Dr. Kathir</li>
+        <li>2) Mr. Nagaraju (Field Ops)</li>
+        <li>3) Dr. Pradhyumna</li>
+        <li>4) Dr. Akhila</li>
+        <li>5) Dr. Vishva</li>
+        <li>6) Dr. Ramakrishnan</li>
+        <li>7) Mr. Vikram</li>
+      </ul>
+    </div>
+
+    <div class="box green">
+      <div class="title">Project Implementation Team</div>
+      <div class="sub-title">Field Team - Mysuru</div>
+      <ul>
+        <li>13) Pooja</li>
+        <li>16) Ajivyappa</li>
+        <li>17) Puttaobasavaiah</li>
+        <li>18) Arjun</li>
+      </ul>
+      <div class="sub-title">Field Team - Chamarajanagar</div>
+      <ul>
+        <li>14) Vinuraj</li>
+        <li>19) Yogesh</li>
+        <li>20) Santosh</li>
+        <li>21) Srinivas</li>
+      </ul>
+      <div class="sub-title">Field Team - Kodagu</div>
+      <ul>
+        <li>15) Dr. Kaveri</li>
+        <li>22) Siddaraju</li>
+        <li>23) Rajesh</li>
+      </ul>
     </div>
   </div>
 </body>
