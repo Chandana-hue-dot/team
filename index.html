@@ -3,139 +3,177 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project CHAnDAna Structure</title>
+  <title>Project CHAnDAna</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8faff;
-      text-align: center;
-      padding: 40px;
+      background: #f7fafd;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .box {
-      border-radius: 12px;
-      padding: 12px;
-      margin: 8px auto;
-      display: inline-block;
-      text-align: left;
-      max-width: 350px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
+
     .title {
-      font-size: 1.4em;
+      background-color: #ef5da8;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      border-radius: 10px;
+      padding: 10px 15px;
+      min-width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .blue { background: #d1f2ff; }
+    .green { background: #cbf7d1; }
+    .pink { background: #ffd5d5; }
+    .yellow { background: #fff2ac; }
+    .purple { background: #dad3ff; }
+
+    .section-title {
       font-weight: bold;
       margin-bottom: 8px;
+      text-decoration: underline;
     }
-    .pink { background-color: #f8c7cc; }
-    .blue { background-color: #b8e0ff; }
-    .yellow { background-color: #fff3b0; }
-    .red { background-color: #ffd1d1; }
-    .purple { background-color: #dad1ff; }
-    .green { background-color: #cbf7d9; }
-    .lightgreen { background-color: #dcffe3; }
-    .container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
+
+    .members {
+      text-align: left;
+      margin-top: 5px;
     }
-    .sub-title {
-      font-weight: bold;
-      margin: 6px 0 3px;
+
+    .sub-group {
+      background: #e2ffe4;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="box pink">
-    <div class="title">Project CHAnDAna</div>
+  <div class="title">Project CHAnDAna</div>
+
+  <div class="row">
+    <div class="box blue">
+      <div class="section-title">Program Monitoring Committee</div>
+      <div class="members">
+        <ul>
+          <li>Prof. Asokan</li>
+          <li>Prof. Ashok Raichur</li>
+          <li>Mr. Prakash</li>
+          <li>Mr. Srikanth</li>
+          <li>Mr. Pardeep</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box blue">
+      <div class="section-title">GoK-IISc-IOCL Steering Committee</div>
+      <div class="members">
+        <ul>
+          <li>Mentoring Committee</li>
+          <li>Technical Committee</li>
+          <li>Purchase Committee</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box blue">
+      <div class="section-title">Expert Advisory Committee</div>
+      <div class="members">
+        <ul>
+          <li>Dr. Deepa Bhat</li>
+          <li>Dr. Tanya Seshadri</li>
+          <li>Dr. Prabhdeep Kaur</li>
+          <li>Dr. Nishant</li>
+          <li>Dr. Yogesh</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
-  <div class="container">
-    <div class="box blue">
-      <div class="title">Program Monitoring Committee</div>
-      <ul>
-        <li>Prof. Asokan</li>
-        <li>Prof. Ashok Raichur</li>
-        <li>Mr. Prakash</li>
-        <li>Mr. Srikanth</li>
-        <li>Mr. Pardeep</li>
-      </ul>
-    </div>
-
-    <div class="box blue">
-      <div class="title">GoK-IISc-IOCL Steering Committee</div>
-      <ul>
-        <li>Mentoring Committee</li>
-        <li>Technical Committee</li>
-        <li>Purchase Committee</li>
-      </ul>
-    </div>
-
-    <div class="box blue">
-      <div class="title">Expert Advisory Committee</div>
-      <ul>
-        <li>Dr. Deepa Bhat</li>
-        <li>Dr. Tanya Seshadri</li>
-        <li>Dr. Prabhdeep Kaur</li>
-        <li>Dr. Nishant</li>
-        <li>Dr. Yogesh</li>
-      </ul>
+  <div class="row">
+    <div class="box yellow">
+      <div class="section-title">Principal Investigator</div>
+      Dr. Sai Siva Gorthi
     </div>
   </div>
 
-  <div class="box yellow">
-    <div class="title">Principal Investigator</div>
-    Dr. Sai Siva Gorthi
-  </div>
-
-  <div class="container">
-    <div class="box red">
-      <div class="title">Project Execution Team</div>
-      <div class="sub-title">IEC Activities Team</div>
-      <ul><li>8) Nisar</li></ul>
-      <div class="sub-title">Command Center & Quality Testing Lab</div>
-      <ul>
-        <li>9) Dr. Lokanathan</li>
-        <li>10) Anitha</li>
-        <li>11) Rayees</li>
-        <li>12) Prajwal</li>
-      </ul>
+  <div class="row">
+    <div class="box pink">
+      <div class="section-title">Project Execution Team</div>
+      <div class="sub-group">
+        <strong>IEC Activities Team</strong>
+        <ul>
+          <li>8) Nisar</li>
+        </ul>
+      </div>
+      <div class="sub-group">
+        <strong>Command Center & Quality Testing Lab</strong>
+        <ul>
+          <li>9) Dr. Lokanathan</li>
+          <li>10) Anitha</li>
+          <li>11) Rayees</li>
+          <li>12) Prajwal</li>
+        </ul>
+      </div>
     </div>
 
     <div class="box purple">
-      <div class="title">Project Management Team</div>
-      <ul>
-        <li>1) Dr. Kathir</li>
-        <li>2) Mr. Nagaraju (Field Ops)</li>
-        <li>3) Dr. Pradhyumna</li>
-        <li>4) Dr. Akhila</li>
-        <li>5) Dr. Vishva</li>
-        <li>6) Dr. Ramakrishnan</li>
-        <li>7) Mr. Vikram</li>
-      </ul>
+      <div class="section-title">Project Management Team</div>
+      <div class="members">
+        <ul>
+          <li>1) Dr. Kathir - Project Manager</li>
+          <li>2) Mr. Nagaraju - Field Ops Manager</li>
+          <li>3) Dr. Pradhyumna</li>
+          <li>4) Dr. Akhila</li>
+          <li>5) Dr. Vishva</li>
+          <li>6) Dr. Ramakrishnan</li>
+          <li>7) Mr. Vikram - Program Assistant</li>
+        </ul>
+      </div>
     </div>
 
     <div class="box green">
-      <div class="title">Project Implementation Team</div>
-      <div class="sub-title">Field Team - Mysuru</div>
-      <ul>
-        <li>13) Pooja</li>
-        <li>16) Ajivyappa</li>
-        <li>17) Puttaobasavaiah</li>
-        <li>18) Arjun</li>
-      </ul>
-      <div class="sub-title">Field Team - Chamarajanagar</div>
-      <ul>
-        <li>14) Vinuraj</li>
-        <li>19) Yogesh</li>
-        <li>20) Santosh</li>
-        <li>21) Srinivas</li>
-      </ul>
-      <div class="sub-title">Field Team - Kodagu</div>
-      <ul>
-        <li>15) Dr. Kaveri</li>
-        <li>22) Siddaraju</li>
-        <li>23) Rajesh</li>
-      </ul>
+      <div class="section-title">Project Implementation Team</div>
+      <div class="sub-group">
+        <strong>Mysuru</strong>
+        <ul>
+          <li>13) Pooja</li>
+          <li>16) Ajivyappa</li>
+          <li>17) Puttaobasaviah</li>
+          <li>18) Arjun</li>
+        </ul>
+      </div>
+      <div class="sub-group">
+        <strong>Chamarajanagar</strong>
+        <ul>
+          <li>14) Vinuraj</li>
+          <li>19) Yogesh</li>
+          <li>20) Santosh</li>
+          <li>21) Srinivas</li>
+        </ul>
+      </div>
+      <div class="sub-group">
+        <strong>Kodagu</strong>
+        <ul>
+          <li>15) Dr. Kaveri</li>
+          <li>22) Siddaraju</li>
+          <li>23) Rajesh</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
